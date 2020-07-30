@@ -1,0 +1,325 @@
+@import url(https://fonts.googleapis.com/css?family=Oxygen);
+
+/* Highlight */
+::selection {
+  background: #008896;
+  color: #fff;
+}
+
+/* Background */
+body {
+  background: #f5f5f5; /* Changeable Background */
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-attachment: fixed;
+  font-family: 'Oxygen', sans-serif;
+}
+
+html {
+  font-family: 'Oxygen', sans-serif;
+}
+
+.container {
+  width: 70vw;
+  box-shadow: 0 6px 6px rgba(0, 0, 0, 0.2);
+  margin-top: 100px;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 5px;
+}
+::-webkit-scrollbar-track {
+  background-color: #fff;
+}
+::-webkit-scrollbar-thumb {
+  background: #008896;
+  border-radius: 5px;
+}
+
+/* Header and Logos */
+.header {
+  margin-bottom: 100px;
+  background-color: #008896;
+  padding: 8px 16px 8px 16px;
+  width: 100vw;
+  position: fixed;
+  top: -30px;
+  left: 0;
+  z-index: 2;
+  height: 80px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.2);
+}
+.header .logo {
+  float: none;
+  margin-left: 15vw;
+}
+.header .logo a:before {
+  content: url('');
+  animation-name: rock;
+  animation-duration: 2.5s;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+}
+.header .logo img {
+  display: inline;
+}
+@keyframes rock {
+  0% {
+     -ms-transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+  }
+  50% {
+    -ms-transform: rotate(-5deg);
+    -webkit-transform: rotate(-5deg);
+    transform: rotate(-5deg);
+  }
+  100% {
+    -ms-transform: rotate(5deg);
+    -webkit-transform: rotate(5deg);
+    transform: rotate(5deg);
+  }
+}
+.header .buttons {
+  width: auto;
+  float: none;
+  height: 0;
+  margin-right: 15vw;
+  padding: 0;
+}
+
+.header .buttons .toolbar {
+  width: auto;
+  margin: 0;
+  position: relative;
+  top: -75px;
+}
+
+/* Navigation Bar */
+.navbar-default {
+  background: #008896;
+  border: 0;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+  margin-top: 16px;
+}
+.navbar-default .navbar-nav li a,
+.navbar-default .navbar-nav li a:visited,
+.navbar-default .navbar-nav li a:link {
+  color: #fff;
+  text-decoration: none;
+  background: none;
+}
+.navbar-default .navbar-nav li a:hover {
+  opacity: 0.8;
+  color: #fff;
+  text-decoration: none;
+}
+.navbar-default .navbar-nav .active {
+  opacity 0.8;
+  color: white;
+}
+.navbar-default .navbar-nav .active a,
+.navbar-default .navbar-nav .active a:visited,
+.navbar-default .navbar-nav .active a:link {
+  color: #fff;
+  text-decoration: none;
+}
+.navbar-default .navbar-nav .active a:hover {
+  color: #fff;
+  text-decoration: none;
+}
+.navbar-default .navbar-nav .open a:focus {
+  background: #008896;
+  color: #fff;
+}
+.dropdown-menu {
+  background: #008896;
+  border: 0;
+  border-radius: 0;
+}
+.dropdown-menu li a {
+  background: #008896;
+  color: #fff;
+  transition: .3s all ease-in;
+  font-family: 'Oxygen', sans-serif;
+}
+.dropdown-menu li a:hover {
+  background: #0692b5;
+  color: #fff;
+}
+.dropdown-menu-right {
+  background: #fff;
+}
+.dropdown-menu .active a {
+  color: #ffffff;
+  text-decoration: none;
+  background-color: #00ace6;
+}
+.dropdown-menu .active a:hover {
+  background-color: #0692b5;
+}
+
+/* Panels */
+.panel { 
+  border: 0;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+.panel .panel-heading {
+  background: #008896;
+  border: 0;
+  color: #fff;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 15px;
+  font-weight: 1000;
+  text-align: center;
+  -webkit-border-radius: 0px;
+  -moz-border-radius: 0px;
+  border-radius: 0px;
+}
+.panel-body {
+  background: #fff;
+}
+.panel-body a {
+  color: #999;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 15px;
+  font-weight: 1000;
+  text-decoration: none;
+  transition: .3s all ease-in;
+}
+.panel-body a:hover {
+  color: #000;
+}
+
+/* Modals */
+.modal {
+  text-shadow: none;
+  opacity: 1;
+}
+.modal-header {
+  background: #008896;
+  border: 0;
+  color: #fff;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 15px;
+  font-weight: 1000;
+  text-align: center;
+  text-transform: uppercase;
+  border-radius 0 !important;
+}
+.modal-body {
+  background: #fff;
+  color: #000;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 15px;
+  text-align: center;
+}
+.modal-footer {
+  background: #008896;
+  border: 0;
+  color: #fff;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 15px;
+  font-weight: bold;
+  text-transform: uppercase;
+  text-align: left;
+}
+
+/* Buttons */
+.btn {
+  background: #008896 !important;
+  border: 2px solid white !important;
+  border-radius: 2px !important;
+  color: #fff !important;
+  opacity: 1 !important;
+  padding: 4px 16px 4px 16px;
+}
+
+.btn:hover {
+  opacity: 1 !important;
+}
+
+.category .packages-image .package .info .button {
+  width: auto !important;
+}
+
+/* Progress Bar */
+.progress-bar {
+  background: #0099cc;
+}
+.progress { 
+  background: #fff;
+  border: 0;
+  border-radius: 0;
+}
+
+/* Footer */
+.footer {
+  width: 100%;
+  background: #008896;
+  border: 0;
+  margin: 0;
+  margin-bottom: 16px;
+  opacity: 1;
+  padding: 20px;
+}
+.footer:before {
+  color: white;
+  content: '';
+  display: table;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 15px;
+  font-weight: 1000;
+  position: relative;
+}
+.branding {
+  color: white;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 15px;
+  font-weight: 1000;
+}
+
+.branding a {
+  color: white;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 15px;
+  font-weight: 1000;
+  text-decoration: none;
+  transition: .3s all ease-in;
+}
+.branding a:hover {
+  color: white;
+}
+.language a {
+  color: white;
+  font-family: 'Oxygen', sans-serif;
+  font-size: 15px;
+  font-weight: 1000;
+  text-decoration: none;
+  transition: .3s all ease-in;
+}
+.language a:hover {
+  color: #fff;
+}
+
+@media (max-width: 720px) {
+  .container {
+    width: 100vw;
+  }
+  .navbar-default .navbar-brand {
+    color: white;
+  }
+  .navbar-default .navbar-toggle .icon-bar {
+    background-color: white;
+  }
+  .header {
+    top: 0;
+    height: 120px;
+    left: 15px;
+  }
+}
